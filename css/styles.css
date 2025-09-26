@@ -1,0 +1,627 @@
+/*color variables*/
+:root{
+    --dark_blue: #002649;
+    --tosca_blue: #4491a8;
+    --red: #ff0000;
+    --purple: #ea00ff;
+    --yellow: #fbff00;
+    --gray: #888888;
+    --white: #ffffff;
+    --black: #000000;
+    --gold: #b49a04;
+    --orange: #cf530b;
+    --black_transparent: rgba(0, 0, 0, 0.5);
+}
+
+/*body, header, and footer css*/
+body{
+    margin: 0;
+    font-family: 'Meera Inimai', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark_blue);
+    height: 100px;
+    padding-right: 150px;
+    padding-left: 150px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--black);
+    height: 300px;
+    font-size: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+nav a{
+    color: var(--tosca_blue);
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+nav a:hover{
+    color: var(--white);
+    text-shadow: 0px 0px 10px var(--white);
+}
+
+nav a:active{
+    color: var(--black);
+    text-shadow: 0px 0px 10px var(--black);
+}
+
+.margin{
+    margin-right: 65px;
+}
+
+/*home page main css*/
+#content_home{
+    height: 400vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+#content_home p{
+    font-size: 35px;
+}
+
+#content_home h1{
+    font-family: 'Ninjabot', sans-serif;
+    font-size: 100px;
+    margin: 0;
+}
+
+#welcome{
+    color: var(--white);
+    background-position: bottom;
+    background-image: url("../asset files/elias-andres-jose-Lxj4qx09fco-unsplash (2).jpg");
+}
+
+#shockwave{
+    color: var(--yellow);
+    background-position: center;
+    background-image: url("../asset files/r-nolan-1ZhZpP91olQ-unsplash (2).jpg");
+}
+
+#nitro{
+    color: var(--purple);
+    background-position: center;
+    background-image: url("../asset files/chris-liverani-HUJDz6CJEaM-unsplash (2).jpg");
+}
+
+#barrel{
+    color: var(--red);
+    background-position: center;
+    background-image: url("../asset files/pavlo-klein-YpdH7ugbdJo-unsplash (2).jpg");
+}
+
+/*subscription page main css*/
+#content_subs{
+    height: 100vh;
+    background-image: url("../asset files/jerry-kavan-8xbPx6Mah5Q-unsplash (2).jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#register{
+    background-color: var(--black_transparent);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+#content_subs h1{
+    font-family: 'Ninjabot', sans-serif;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 25px;
+    color: var(--white);
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--white);
+    font-family: 'Meera Inimai', sans-serif;
+    font-size: 15px;
+}
+
+label{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.fix_choice{
+    margin-right: 0;
+}
+
+.fix_label{
+    margin-left: 0;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+#register_button{
+    background-color: var(--black_transparent);
+    color: var(--white);
+    transition: 0.15s;
+}
+
+#register_button:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/*news page main css*/
+#content_news{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../asset files/troy-t-o3ttVJcaFI0-unsplash (2).jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+#content_news h1{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 100px;
+    color: var(--red);
+    font-family: 'Ninjabot', sans-serif;
+}
+
+#news_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.news_section{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    background-color: var(--black_transparent);
+    border: 1px solid var(--white);
+    padding: 25px;
+}
+
+.news_image{
+    background-size: cover;
+    border: 1px solid var(--white);
+    height: 210px;
+    width: 365px;
+}
+
+#news1_image{
+    background-position: center;
+    background-image: url("../asset files/r-nolan-1ZhZpP91olQ-unsplash.jpg");
+}
+
+#news2_image{
+    background-position: center;
+    background-image: url("../asset files/chris-liverani-HUJDz6CJEaM-unsplash.jpg");
+}
+
+#news3_image{
+    background-position: center;
+    background-image: url("../asset files/pavlo-klein-YpdH7ugbdJo-unsplash.jpg");
+}
+
+#content_news h2{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#content_news p{
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+/*products page main css*/
+#content_prod{
+    height: 600vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.image2{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../asset files/2017-Lamborghini-Centenario-003-2000 (2).jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+#content_prod p{
+    color: var(--yellow);
+    font-size: 35px;
+}
+
+#content_prod h1{
+    font-family: 'Ninjabot', sans-serif;
+    font-size: 100px;
+    margin: 0;
+}
+
+#content_prod #content_prod_intro h1{
+    color: var(--yellow);
+}
+
+#content_prod #s_class h1{
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+#content_prod #a_class h1{
+    color: var(--purple);
+    margin-bottom: 20px;
+}
+
+#content_prod #b_class h1{
+    color: var(--orange);
+    margin-bottom: 20px;
+}
+
+#content_prod #c_class h1{
+    color: var(--tosca_blue);
+    margin-bottom: 20px;
+}
+
+#content_prod #d_class h1{
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+#content_prod h2{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--white);
+}
+
+.cars_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.car_section{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    background-color: var(--black_transparent);
+    border: 1px solid var(--white);
+    padding: 25px;
+}
+
+.car_image{
+    background-size: cover;
+    border: 1px solid var(--white);
+    height: 210px;
+    width: 365px;
+}
+
+#s1_image{
+    background-image: url("../asset files/2020-Koenigsegg-Jesko-003-2160.jpg");
+    background-position: center;
+}
+
+#s2_image{
+    background-image: url("../asset files/2020-Bugatti-Bolide-Concept-010-2160.jpg");
+    background-position: center;
+}
+
+#s3_image{
+    background-image: url("../asset files/2015-Koenigsegg-Agera-RS-002-1600.jpg");
+    background-position: center;
+}
+
+#s4_image{
+    background-image: url("../asset files/2021-Hennessey-Venom-F5-002-2160.jpg");
+    background-position: center;
+}
+
+#a1_image{
+    background-image: url("../asset files/2013-Lamborghini-Veneno-006-1600.jpg");
+    background-position: center;
+}
+
+#a2_image{
+    background-image: url("../asset files/2014-Ferrari-LaFerrari-002-2160.jpg");
+    background-position: center;
+}
+
+#a3_image{
+    background-image: url("../asset files/2017-Ford-GT-015-2160.jpg");
+    background-position: center;
+}
+
+#a4_image{
+    background-image: url("../asset files/2018-McLaren-720S-010-2000.jpg");
+    background-position: center;
+}
+
+#b1_image{
+    background-image: url("../asset files/2020-Porsche-911-Turbo-S-002-2160.jpg");
+    background-position: center;
+}
+
+#b2_image{
+    background-image: url("../asset files/2020-Mercedes-AMG-GT-R-005-2160.jpg");
+    background-position: center;
+}
+
+#b3_image{
+    background-image: url("../asset files/2018-Ford-Mustang-GT-008-2000.jpg");
+    background-position: center;
+}
+
+#b4_image{
+    background-image: url("../asset files/2017-Nissan-GT-R-004-2000.jpg");
+    background-position: center;
+}
+
+#c1_image{
+    background-image: url("../asset files/2020-Honda-Civic-Type-R-006-2160.jpg");
+    background-position: center;
+}
+
+#c2_image{
+    background-image: url("../asset files/1997-Toyota-Supra-006-1536.jpg");
+    background-position: center;
+}
+
+#c3_image{
+    background-image: url("../asset files/1991-Mazda-RX-7-002-2160.jpg");
+    background-position: center;
+}
+
+#c4_image{
+    background-image: url("../asset files/2011-Mitsubishi-Lancer-Evolution-X-004-1200.jpg");
+    background-position: center;
+}
+
+#d1_image{
+    background-image: url("../asset files/1983-Toyota-Sprinter-Trueno-AE86-003-1440.jpg");
+    background-position: center;
+}
+
+#d2_image{
+    background-image: url("../asset files/2003-Honda-S2000-008-1440.jpg");
+    background-position: center;
+}
+
+#d3_image{
+    background-image: url("../asset files/1995-Mitsubishi-Eclipse-002-1440.jpg");
+    background-position: center;
+}
+
+#d4_image{
+    background-image: url("../asset files/2007-Subaru-Impreza-WRX-STI-011-1536.jpg");
+    background-position: center;
+}
+
+/*esport event page main css*/
+#content_esp{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url("../asset files/media-studio-hong-kong-PtoAvYUWn7I-unsplash (2).jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#event{
+    background-color: var(--black_transparent);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+#trailer video{
+    height: 250px;
+    width: 400px;
+}
+
+#content_esp p{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+#content_esp h1{
+    font-family: 'Ninjabot', sans-serif;
+    font-size: 100px;
+    color: var(--white);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#content_esp h2{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        padding-left: 55px;
+        padding-right: 55px;
+        height: 70px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    header img{
+        height: 15px;
+        width: 165px;
+    }
+
+    footer{
+        height: 185px;
+        font-size: 8px;
+    }
+
+    footer img{
+        height: 30px;
+        width: 330px;
+    }
+
+    a{
+        font-size: 12px;
+    }
+
+    .margin{
+        margin-right: 30px;
+    }
+
+    #content_home p{
+        font-size: 14px;
+    }
+    
+    #content_home h1{
+        font-size: 40px;
+    }
+
+    #register{
+        padding: 16px;
+    }
+
+    #content_subs h1{
+        font-size: 23px;
+        margin-bottom: 18px;
+    }
+    
+    input{
+        padding: 11px;
+        margin-bottom: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+        font-size: 13px;
+    }
+    
+    label{
+        margin-left: 16px;
+        margin-bottom: 11px;
+        font-size: 13px;
+    }
+    
+    #content_news h1{
+        font-size: 40px;
+    }
+    
+    .news_section{
+        padding: 13px;
+    }
+    
+    .news_image{
+        height: 100px;
+        width: 175px;
+    }
+    
+    #content_news h2{
+        margin-top: 8px;
+        font-size: 12px;
+    }
+    
+    #content_news p{
+        font-size: 8px;
+    }
+    
+    #content_prod p{
+        font-size: 14px;
+    }
+    
+    #content_prod h1{
+        font-size: 40px;
+    }
+    
+    #content_prod h2{
+        margin-top: 8px;
+        font-size: 10px;
+    }
+    
+    .car_section{
+        padding: 10px;
+    }
+    
+    .car_image{
+        height: 80px;
+        width: 150px;
+    }
+
+    #event{
+        padding: 20px;
+    }
+    
+    #trailer video{
+        height: 200px;
+        width: 325px;
+    }
+    
+    #content_esp p{
+        font-size: 12px;
+    }
+    
+    #content_esp h1{
+        font-size: 40px;
+    }
+    
+    #content_esp h2{
+        margin-top: 8px;
+        font-size: 20px;
+    }
+}
